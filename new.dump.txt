@@ -1,0 +1,38 @@
+==================================
+  Mode: cpu(1000)
+  Samples: 6104 (0.00% miss rate)
+  GC: 16 (0.26%)
+==================================
+     TOTAL    (pct)     SAMPLES    (pct)     FRAME
+      3062  (50.2%)        3047  (49.9%)     Redis::Connection::Ruby#write
+      2974  (48.7%)        1742  (28.5%)     Redis::Connection::SocketMixin#_read_from_socket
+      1232  (20.2%)        1232  (20.2%)     rescue in Redis::Connection::SocketMixin#_read_from_socket
+      2997  (49.1%)          23   (0.4%)     Redis::Connection::SocketMixin#gets
+        12   (0.2%)          12   (0.2%)     block in Redis::Connection::CommandHelper#build_command
+        10   (0.2%)          10   (0.2%)     Object#fake_messages
+         5   (0.1%)           5   (0.1%)     MonitorMixin#mon_enter
+      6078  (99.6%)           5   (0.1%)     Object#add_msg
+        15   (0.2%)           3   (0.0%)     Redis::Connection::CommandHelper#build_command
+         2   (0.0%)           2   (0.0%)     StoredMsg#to_s
+      6065  (99.4%)           2   (0.0%)     Redis::Client#logging
+         1   (0.0%)           1   (0.0%)     rescue in Redis::Connection::TCPSocket.connect_addrinfo
+      6063  (99.3%)           1   (0.0%)     Redis::Client#ensure_connected
+         1   (0.0%)           1   (0.0%)     Redis::Connection::Ruby#format_status_reply
+      2999  (49.1%)           1   (0.0%)     Redis::Connection::Ruby#read
+         1   (0.0%)           1   (0.0%)     MonitorMixin#mon_exit
+      3635  (59.6%)           0   (0.0%)     Redis#rpush
+      6088  (99.7%)           0   (0.0%)     block (2 levels) in <top (required)>
+      6088  (99.7%)           0   (0.0%)     block in <top (required)>
+      6088  (99.7%)           0   (0.0%)     <top (required)>
+      6088  (99.7%)           0   (0.0%)     <main>
+      6088  (99.7%)           0   (0.0%)     <main>
+      3062  (50.2%)           0   (0.0%)     block in Redis::Client#write
+      6061  (99.3%)           0   (0.0%)     Redis::Client#io
+      3062  (50.2%)           0   (0.0%)     Redis::Client#write
+      3062  (50.2%)           0   (0.0%)     block (3 levels) in Redis::Client#process
+      2434  (39.9%)           0   (0.0%)     block in Redis#ltrim
+      2436  (39.9%)           0   (0.0%)     Redis#ltrim
+      2999  (49.1%)           0   (0.0%)     block in Redis::Client#read
+      2999  (49.1%)           0   (0.0%)     Redis::Client#read
+
+      0.490000   0.200000   0.690000 (  0.848296)
